@@ -1,0 +1,10 @@
+node_modules/
+.env
+logs/*.log
+uploads/hotels/*
+uploads/tours/*
+uploads/guides/*
+!uploads/.gitkeep
+dist/
+coverage/
+.DS_Store
