@@ -21,7 +21,6 @@
 - [Tech Stack](#-tech-stack)
 - [Cấu Trúc Dự Án](#-cấu-trúc-dự-án)
 - [Cài Đặt & Chạy](#-cài-đặt--chạy)
-- [Biến Môi Trường](#-biến-môi-trường)
 - [API Endpoints](#-api-endpoints)
 - [Database Schema](#-database-schema)
 - [Phát Triển](#-phát-triển)
@@ -260,60 +259,6 @@ npm run dev
 | Frontend | http://localhost:5173 |
 | Backend API | http://localhost:5000/api |
 | Health Check | http://localhost:5000/health |
-
----
-
-## 🔐 Biến Môi Trường
-
-### Backend (`.env`)
-
-```env
-# Server
-PORT=5000
-NODE_ENV=development
-
-# Database (MySQL)
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=booking_travel_db
-
-# JWT
-JWT_SECRET=your_super_secret_jwt_key_here_min_32_chars
-JWT_EXPIRES_IN=7d
-JWT_REFRESH_SECRET=your_refresh_secret_key_here
-JWT_REFRESH_EXPIRES_IN=30d
-
-# Email (Nodemailer)
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-EMAIL_FROM="TravelBook <noreply@travelbook.vn>"
-
-# File Upload
-MAX_FILE_SIZE=5242880
-UPLOAD_PATH=./uploads
-
-# CORS
-FRONTEND_URL=http://localhost:3000
-
-# Payment (tùy chọn)
-VNPAY_TMN_CODE=
-VNPAY_HASH_SECRET=
-VNPAY_URL=https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
-VNPAY_RETURN_URL=http://localhost:5000/api/payments/vnpay/return
-```
-
-### Frontend (`.env`)
-
-```env
-VITE_API_URL=http://localhost:5000/api
-VITE_UPLOAD_URL=http://localhost:5000/uploads
-VITE_APP_NAME=TravelBook
-VITE_APP_VERSION=1.0.0
-```
 
 ---
 
