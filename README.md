@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # ✈️ TravelBook – Nền Tảng Đặt Lịch Du Lịch
 
@@ -593,4 +593,3 @@ Dự án được phân phối dưới giấy phép **MIT**. Xem file [LICENSE](
 **Được xây dựng với ❤️ bởi TungSonn**
 
 </div>
-]]>
