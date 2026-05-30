@@ -18,7 +18,6 @@
 
 - [Tổng Quan](#-tổng-quan)
 - [Tính Năng](#-tính-năng)
-- [Kiến Trúc Hệ Thống](#-kiến-trúc-hệ-thống)
 - [Tech Stack](#-tech-stack)
 - [Cấu Trúc Dự Án](#-cấu-trúc-dự-án)
 - [Cài Đặt & Chạy](#-cài-đặt--chạy)
