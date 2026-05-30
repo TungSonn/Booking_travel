@@ -7,7 +7,9 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
     "migrate": "node database/migrations/run.js",
-    "seed": "node database/seeders/seed.js"
+    "migrate:fresh": "node database/migrations/run.js --fresh",
+    "seed": "node database/seeders/seed.js",
+    "db:test": "node database/test-connection.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
