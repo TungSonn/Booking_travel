@@ -40,7 +40,7 @@
 ## ✨ Tính Năng
 
 ### 👤 Người Dùng
-- Đăng ký / Đăng nhập với JWT (Access + Refresh Token)
+- Đăng ký / Đăng nhập 
 - Quản lý hồ sơ cá nhân
 - Lịch sử đặt chỗ, hủy booking
 - Đánh giá & nhận xét (kèm ảnh)
