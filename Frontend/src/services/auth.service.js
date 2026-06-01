@@ -11,6 +11,10 @@ export const authService = {
     const res = await api.get('/auth/me');
     return res.data;
   },
+  getUsers: async () => {
+    const res = await api.get('/auth/users');
+    return res.data;
+  },
   updateProfile: (data)  => api.put('/auth/update-profile', data),
   forgotPassword: (email)=> api.post('/auth/forgot-password', { email }),
   resetPassword: (token, password) => api.post(`/auth/reset-password/${token}`, { password }),

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/auth.controller');
-const { authenticate } = require('../middleware/auth');
+const { authenticate, authorize } = require('../middleware/auth');
 
 // POST /api/auth/register
 router.post('/register', authController.register);
@@ -17,6 +17,9 @@ router.post('/logout', authenticate, authController.logout);
 
 // GET  /api/auth/me
 router.get('/me', authenticate, authController.getMe);
+
+// GET  /api/auth/users (Admin only)
+router.get('/users', authenticate, authorize('admin'), authController.getAllUsers);
 
 // PUT  /api/auth/update-profile
 router.put('/update-profile', authenticate, authController.updateProfile);

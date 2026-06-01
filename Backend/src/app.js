@@ -58,10 +58,10 @@ const startServer = async () => {
     await sequelize.authenticate();
     logger.info('✅ Database connection established');
 
-    // Sync models (use migrations in production instead)
+    // Sync models (Safe sync without alter/force since tables are already created)
     if (process.env.NODE_ENV === 'development') {
-      await sequelize.sync({ alter: true });
-      logger.info('✅ Database synced');
+      await sequelize.sync();
+      logger.info('✅ Database synced (safe)');
     }
 
     app.listen(PORT, () => {

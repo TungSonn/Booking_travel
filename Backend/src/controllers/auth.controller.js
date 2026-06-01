@@ -116,3 +116,13 @@ exports.verifyEmail = async (req, res, next) => {
     res.json({ success: true, message: 'Email verified successfully.' });
   } catch (err) { next(err); }
 };
+
+// GET /api/auth/users (Admin only)
+exports.getAllUsers = async (req, res, next) => {
+  try {
+    const users = await User.findAll({
+      attributes: { exclude: ['password'] }
+    });
+    res.json({ success: true, data: users });
+  } catch (err) { next(err); }
+};
